@@ -26,7 +26,7 @@ phone)
  }
  }
 }
-Bước 3: Mở Program.cs tạo danh sách sinh viên như sau:
+
 public static List<Student> students = new List<Student>()
  {
  new Student(){studentId="1", studentName="Nguyen Van A", age=20, phone="0333912821",address="Hà Nội"},
@@ -35,7 +35,7 @@ public static List<Student> students = new List<Student>()
  new Student(){studentId="4", studentName="Nguyen Van D", age=20, phone="0333912824",address="Hưng Yên"},
  new Student(){studentId="5", studentName="Nguyen Van E", age=20, phone="0333912825",address="Hà Nội"},
  };
-Bước 4: Xây dựng các hàm hiển thị, thêm, sửa, xoá sinh viên
+
 public static bool addStudent(Student student)
  {
  try
@@ -90,7 +90,7 @@ Console.WriteLine($"{item.studentId}\t{item.studentName}\t{item.age}\t{item.phon
 dress}");
  }
  }
-Bước 5: Xây dựng hàm thông báo và hiển thị menu
+
 public static void alert(bool isSuccess, string action)
  {
  string message = isSuccess ? $"{action} thành công!" : $"{action} thất bại!";
@@ -163,7 +163,6 @@ alert(deleteStudent(students.First(x => x.studentId == id)),
  }
  } while (n != 4);
  }
-Bước 6: Gọi hàm hiển thị menu
 static void Main(string[] args)
  {
  //Config Console Output được Tiếng Việt
